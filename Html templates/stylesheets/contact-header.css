@@ -214,11 +214,7 @@ input[type="submit"]:hover {
 }
 
 
-@media (min-width: 1201px) {
-  .header-content {
-    position: relative;
-  }
-
+@media (min-width: 1200px) {
   .form h1 {
     font-size: 2rem;
     margin: 0px 0px 20px;
