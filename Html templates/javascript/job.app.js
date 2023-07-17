@@ -12,6 +12,7 @@ close.addEventListener('click', () => {
   dataContent.style.animationName = 'disappearInfo';
   messageParent.style.animationName = 'hideInfo';
   window.location.reload();
+  window.history.back();
 });
 
 const hideMsg = (alertMsg) => {
