@@ -1,0 +1,235 @@
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+.contact-header {
+  width: var(--col-12);
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/contact-us.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-content {
+  width: var(--col-12);
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.form {
+  width: var(--col-12);
+  height: auto;
+  padding: 0% 7%;
+  z-index: 1;
+}
+
+.form h1 {
+  font-size: 1.4rem;
+  margin: 0px 0px 20px;
+  color: #d3a024;
+}
+
+.form label {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.form:nth-child(1) p,.form:nth-child(2) p {
+  margin: 12px 0px 3px;
+}
+
+.form input[name="name"],.form input[name="email"] {
+  outline: none;
+  border: none;
+  background: #fff;
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.form input::placeholder, textarea::placeholder {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 35px;
+  background: transparent;
+  border: 1px solid #000033;
+  color: #d3a024;
+  font-size: 1rem;
+  margin-top: 12px;
+  transition: 100ms;
+  -webkit-transition: 100ms;
+  -moz-transition: 100ms;
+  -ms-transition: 100ms;
+  -o-transition: 100ms;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #d3a024;
+  color: #000033;
+  transition: 100ms;
+  -webkit-transition: 100ms;
+  -moz-transition: 100ms;
+  -ms-transition: 100ms;
+  -o-transition: 100ms;
+}
+
+.location-img {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .form label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-content {
+    padding: 0px 7% 5px;
+  }
+
+  .form h1 {
+    font-size: 1.5rem;
+    margin: 20px 0px;
+  }
+
+  .form label {
+    font-size: 1.2rem;
+  }
+
+  .form:nth-child(1) p,.form:nth-child(2) p {
+    margin: 20px 0px 5px;
+  }
+
+  .form input[name="name"],.form input[name="email"] {
+    width: 95%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  input[type="submit"] {
+    width: 95%;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    width: var(--col-7);
+  }
+
+  .form h1 {
+    font-size: 1.8rem;
+    margin: 20px 0px;
+    color: #d3a024;
+  }
+
+  .form label {
+    font-size: 1.3rem;
+  }
+
+  .form input::placeholder, textarea::placeholder {
+    font-size: 1.1rem;
+  }
+
+  .form input[name="name"],.form input[name="email"], textarea {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    height: 40px;
+  }
+
+  .location-img {
+    display: block;
+    width: var(--col-5);
+    height: auto;
+    margin-top: 10px;
+    z-index: 1;
+  }
+
+  .location-img img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+
+
+@media (min-width: 1201px) {
+  .header-content {
+    position: relative;
+  }
+
+  .form h1 {
+    font-size: 2rem;
+    margin: 0px 0px 20px;
+  }
+
+  .form label {
+    font-size: 1.5rem;
+  }
+
+  .location-img {
+    width: var(--col-5);
+    padding: 0% 2% 0%;
+  }
+}

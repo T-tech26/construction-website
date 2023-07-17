@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Contact Page</title>
+
+  <link rel="stylesheet" href="/stylesheets/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/fontawesome.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/nav.css">
+  <link rel="stylesheet" href="/stylesheets/data.css">
+  <link rel="stylesheet" href="/stylesheets/contact-header.css">
+  <link rel="stylesheet" href="/stylesheets/contact-page-main.css">
+  <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+<body>
+  <header>
+    <div class="contact-header">
+        <section class="nav"></section>
+        <section class="response-data" id="response-data">
+          <span class="close" id="close"><i class="fas fa-times"></i></span>
+          <div class="data-content" id="data-content">
+            <h1>your contact info</h1>
+            <ul>
+              <li>Name: <span id="name"></span></li>
+              <li>Email: <span id="email"></span></li>
+              <li>Message: <span id="msg"></span></li>
+            </ul>
+          </div>
+        </section>
+
+        <div
+          class="response-msg"
+          id="response-msg"
+        >
+          form submitted successfully
+        </div>
+
+        <section class="header-content">
+          <!--contact form-->
+          <div class="form">
+            <h1>Contact us</h1>
+
+            <form method="post" id="form">
+              <p><label for="input-name">Full name</label></p>
+              <input type="text" name="name" placeholder="name" id="input-name">
+              <br>
+              <p><label for="input-email">Email</label></p>
+              <input type="text" name="email" placeholder="example@gmail.com" id="input-email">
+              <br>
+              <p><label for="message">Message us</label></p>
+              <textarea name="message" placeholder="please leave us a message....." id="message"></textarea>
+              <br>
+              <input type="submit" value="Submit" id="submit">
+            </form>
+          </div>
+
+          <!--location image-->
+          <div class="location-img">
+            <img src="/webimage/location.jpg" alt="">
+          </div>
+        </section>
+    </div>
+
+  </header>
+
+  <!--main content of the page-->
+  <main>
+
+    <!--office address info section-->
+    <section class="office-info">
+      <div class="info">
+
+        <div class="office-img">
+          <img src="/webimage/office.jpg" alt="">
+        </div>
+
+        <div class="info-detail">
+
+          <h1>Our office in lagos</h1>
+
+          <ul>
+            <li><strong>Address :</strong>&nbsp;Santa Bella Garden, Eleko Refinery Road Ibeju lekki Lagos State</li>
+            <li><strong>Email :</strong>&nbsp;Edithempire01@gmail.com</li>
+            <li><strong>Our Tel :</strong>&nbsp;+2348055736065</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="icons">
+      <hr class="first-hr" />
+        <p>follow us</p>
+        <span><a href=""><i class="fa-brands fa-facebook-square"></i></a></span>
+        <span><a href=""><i class="fa-brands fa-instagram-square"></i></a></span>
+        <span><a href=""><i class="fa-brands fa-whatsapp-square"></i></a></span>
+      <hr class="second-hr" />
+    </div>
+
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+  <section class="mobile-nav" id="mobile-nav">
+  </section>
+
+  <script src="/javascript/nav.js"></script>
+  <script src="/javascript/mobileNav.js"></script>
+  <script src="/javascript/footer.js"></script>
+  <script src="/javascript/mobile.nav.js"></script>
+  <script src="/javascript/contact.form.js"></script>
+</body>
+</html>

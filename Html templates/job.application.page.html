@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+
+  <link rel="stylesheet" href="stylesheets/all.min.css">
+  <link rel="stylesheet" href="stylesheets/fontawesome.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/nav.css">
+  <link rel="stylesheet" href="/stylesheets/data.css">
+  <link rel="stylesheet" href="stylesheets/job.application.css">
+  <link rel="stylesheet" href="/stylesheets/footer.css">
+
+</head>
+<body>
+  <section class="response-data" id="response-data">
+    <span class="close" id="close"><i class="fas fa-times"></i></span>
+    <div class="data-content" id="data-content">
+      <h1>your job application info</h1>
+      <ul>
+        <li>Name: <span id="info-name"></span></li>
+        <li>Address: <span id="info-address"></span></li>
+        <li>Gender: <span id="info-gender"></span></li>
+        <li>Date of birth: <span id="info-dob"></span></li>
+        <li>Nationality <span id="info-nationality"></span></li>
+        <li>State of Origin: <span id="info-state"></span></li>
+        <li>Phone: <span id="info-number"></span></li>
+        <li>Email: <span id="info-email"></span></li>
+        <li>Certificate: <embed src="" id="info-certificate"></embed></li>
+        <li>Resume: <embed src="" id="info-resume"></embed></li>
+      </ul>
+    </div>
+  </section>
+
+  <div
+    class="response-msg"
+    id="response-msg"
+  >
+    form submitted successfully
+  </div>
+
+  <main>
+
+    
+    <section>
+
+      <div class="app-form">
+
+        <h1>Job Application Form</h1>
+
+        <form method="post" id="form">
+
+          <label for="fullname">Full Name :</label>
+          <input type="text" name="fullname" placeholder="fullname" id="name">
+          <br>
+          <label for="address">Address :</label>
+          <input type="text" name="address" placeholder="address" id="address">
+          <br>
+
+          <div class="gender">
+            <label for="gender">Gender :</label>
+            <select name="gender" id="gender">
+              <option value="">Select gender</option>
+              <option value="male" class="gender-opt">Male</option>
+              <option value="female" class="gender-opt">Female</option>
+            </select>
+          </div>
+
+          <br>
+          <label for="date of birth">Date of Birth :</label>
+          <input type="date" name="date of birth" pattern="DD/MM/YYYY" id="DOB">
+          <br>
+          <label for="nationality">Nationality :</label>
+          <input type="text" name="nationality" placeholder="nationality" id="nationality">
+          <br>
+          <label for="state of origin">State of Origin :</label>
+          <input type="text" name="state of origin" placeholder="state of origin" id="state">
+          <br>
+          <label for="tel">Phone number :</label>
+          <input type="tel" name="tel" placeholder="+1 234 234 534" id="phone">
+          <br>
+          <label for="email">Email :</label>
+          <input type="email" name="email" placeholder="example@gmail.com" id="email">
+          <br>
+          <label for="certificat">Certificate of Competency :</label>
+          <input type="file" name="certificate" accept=".pdf" id="certificate">
+          <br>
+          <label for="resume">Curriculum vitae(CV) :</label>
+          <input type="file" name="resume" accept=".pdf" id="resume">
+          <br>
+          <input type="radio" name="terms and conditions" id="termncond">
+          <label for="terms and conditions">Agree to the Terms and Conditions</label>
+          <br>
+          
+          <button>Submit</button>
+          <br>
+          <p>
+            Already skilled
+            <a href="certificate.application.page.html"> Apply for Certification</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  </footer>
+  
+  <script src="javascript/footer.js"></script>
+  <script src="javascript/job.app.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1500px;
+  margin: auto;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  border: 1px solid #000033;
+  user-select: none;
+  position: relative;
+}
+
+.nav {
+  width: var(--col-12);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+nav {
+  width: var(--col-12);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.show-menu-icon {
+  width: 40px;
+  height: 35px;
+}
+
+.show-menu-icon span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #d3a024;
+  cursor: pointer;
+}
+
+.show-menu-icon span {
+  margin: 6px auto;
+}
+
+nav ul {
+  display: none;
+}
+
+#position {
+  width: var(--col-12);
+  background: #fff;
+  position: fixed;
+  border-bottom: 1px solid #000033;
+  border-right: 1px solid #000033;
+  z-index: 40;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  top: 0%;
+  right: 0%;
+}
+
+#position:hover span {
+  background: #000033;
+}
+
+#position h1 {
+  color: #000033;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  width: var(--col-12);
+  height: 100vh;
+  background: #003;
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: none;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showNav {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes hideNav {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.mobile-nav div {
+  width: var(--col-12);
+  height: auto;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav div h1, .cancel-menu-icon {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cancel-menu-icon:hover {
+  color: #d3a024;
+  font-weight: 700;
+  border: none;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  cursor: pointer;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.mobile-nav ul li {
+  width: var(--col-12);
+  text-align: center;
+  padding: 10px;
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: var(--col-12);
+  padding: 5px 30px;
+}
+
+.mobile-nav ul li:hover {
+  background: #d3a024;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+
+@media (min-width: 640px) {
+  nav {
+    padding: 20px 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 20px 5%;
+  }
+
+  .show-menu-icon {
+    display: none;
+  }
+
+  nav ul {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #000033;
+    padding: 10px;
+  }
+
+  nav ul li a:hover {
+    color: #000033;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    background: #d3a024;
+  }
+}
+
+@media (min-width: 1100px) {
+  nav ul {
+    gap: 30px;
+  }
+}

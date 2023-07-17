@@ -1,0 +1,374 @@
+/* main content design for all mobiles */
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+.about-header {
+  width: var(--col-12);
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/about-us.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: 90%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  /* text-transform: capitalize; */
+  border: 1px solid #d3a024;
+  padding: 2% 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.first-head {
+  width: var(--col-12);
+  padding: 5% 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.first-hr {
+  width: var(--col-7);
+  height: 3px;
+  outline: none;
+  border: none;
+  background: #000033;
+  margin-top: 5px;
+}
+
+.first-head h2 {
+  width: var(--col-5);
+  color: #000033;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.about {
+  width: var(--col-12);
+  height: auto;
+}
+
+.about-ceo {
+  width: var(--col-12);
+  height: auto;
+  background: #000033;
+  padding: 5% 4%;
+}
+
+.ceo-img {
+  width: var(--col-10);
+  height: var(--col-6);
+  margin: auto;
+}
+
+.ceo-img img, .team-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.ceo-des, .team-des {
+  width: var(--col-10);
+  height: auto;
+  padding: 5% 0%;
+  line-height: 26px;
+  text-align: center;
+  margin: auto;
+}
+
+.flex-head1, .flex-head2 {
+  width: var(--col-12);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.flex-head1 hr, .flex-head2 hr {
+  display: none;
+}
+
+.flex-head1 h2, .flex-head2 h2 {
+  color: #d3a024;
+  font-size: 1.3rem;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.ceo-des p, .team-about p {
+  height: auto;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.team-about {
+  width: var(--col-12);
+  height: auto;
+  margin-top: 50px;
+  background: #d3a024;
+  padding: 5% 4%;
+}
+
+.team-img {
+  width: var(--col-10);
+  height: auto;
+  margin: auto;
+}
+
+.flex-head2 h2 {
+  color: #000033;
+}
+
+.second-head {
+  width: var(--col-12);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.second-head hr {
+  display: none;
+}
+
+.second-head h2 {
+  color: #000033;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.more-about {
+  width: var(--col-12);
+  height: auto;
+  margin-top: 30px;
+  background: #000033;
+  padding: 5% 5%;
+}
+
+.vision, .mission {
+  width: var(--col-12);
+  height: auto;
+}
+
+.vision h2, .mission h2 {
+  width: var(--col-12);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #d3a024;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vision p, .mission p {
+  width: var(--col-12);
+  height: auto;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+ .mission {
+  padding: 10% 0%;
+}
+
+/* main content design for ipads and tablets */
+
+@media (min-width: 640px) {
+  .hero-text {
+    width: 550px;
+  }
+
+  .first-head h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-ceo {
+    padding: 2% 4%;
+  }
+
+  .about-ceo::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .ceo-img, .team-img {
+    width: var(--col-5);
+    height: auto;
+    margin: 75px 20px 0px 0px;
+    float: left;
+  }
+
+  .ceo-des, .team-des {
+    width: var(--col-12);
+    height: auto;
+  }
+
+  .flex-head1, .flex-head2 {
+    width: auto;
+    justify-content: space-between;
+  }
+
+  .flex-head1 hr, .flex-head2 hr {
+    display: none;
+  }
+
+  .flex-head1 h2, .flex-head2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .ceo-des p, .team-about p {
+    width: var(--col-12);
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .team-about {
+    padding: 2% 4%;
+  }
+
+  .team-about::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .team-img {
+    margin: 75px 0px 0px 20px;
+    float: right;
+  }
+
+  .second-head {
+    padding: 0% 7% 0% 0%;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .second-head hr {
+    width: var(--col-7);
+    height: 3px;
+    outline: none;
+    border: none;
+    background: #000033;
+    display: block;
+  }
+
+  .second-head h2 {
+    width: var(--col-5);
+    height: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: -14px;
+  }
+
+  .more-about {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 60px;
+  }
+
+  .vision {
+    width: var(--col-6);
+    border-right: 2px solid #fff;
+    padding: 0% 1%;
+  }
+
+  .vision h2, .mission h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+
+  .vision p, .mission p {
+    font-size: 1.2rem;
+  }
+
+  .mission {
+    width: var(--col-6);
+    height: auto;
+    padding: 0% 0% 0% 2%;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+  
+  .first-hr {
+    width: var(--col-9);
+  }
+
+  .first-head h2 {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    padding: 0% 7%;
+  }
+
+  .about-ceo, .team-about, .more-about {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .second-head hr {
+    width: var(--col-9);
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-head h2 {
+    font-size: 1.8rem;
+  }
+
+  .second-head h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission {
+    padding: 0% 2%;
+  }
+}

@@ -1,0 +1,158 @@
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+body {
+  background: #d3d3d3;
+}
+
+main {
+  width: var(--col-12);
+  height: auto;
+}
+
+.app-form {
+  width: 80%;
+  height: auto;
+  background: #fff;
+  padding: 2% 5% 10%;
+  margin: 50px auto 100px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+h1 {
+    color: #d3a024;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 5% 0%;
+  }
+
+label {
+  color: #000033;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+input, .courses select, .gender select {
+  width: var(--col-12);
+  margin: 5px 0px 30px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 45px;
+  outline: none;
+  background: none;
+  padding: 0% 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  width: auto;
+  height: auto;
+}
+
+input:focus, .course select:focus, .gender select:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6) inset;
+}
+
+input::placeholder, input[type="date"] {
+  color: #00003398;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.gender select, .courses select {
+  width: var(--col-12);
+  height: 35px;
+  color: #000033bd;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 5px 0px 13px 0px;
+  padding: 0%;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  color: #000033;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: none;
+  background: #fff;
+  margin: 20px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+form p {
+  text-align: center;
+  color: #000033;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+form p a {
+  color: #000033;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .app-form {
+    width: 600px;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input, .gender select, .courses select {
+    font-size: 1.1rem;
+  }
+
+  input::placeholder, input[type="date"] {
+    font-size: 1rem;
+  }
+
+  .gender select, .courses select {
+    height: 45px;
+  }
+
+  button {
+    width: 300px;
+  }
+
+  button:hover {
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8) inset;
+  }
+}

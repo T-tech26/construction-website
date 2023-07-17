@@ -1,0 +1,363 @@
+/* construction page designs for tablet devices */
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+.const-header {
+  width: var(--col-12);
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/construction.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: 90%;
+  text-align: left;
+  border: 1px solid #d3a024;
+  padding: 3% 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.hero-text h1 {
+  color: #d3a024;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.man, .oil, .rig, .art {
+  width: var(--col-12);
+  height: auto;
+  padding: 2% 7%;
+}
+
+.man-sec {
+  width: var(--col-12);
+  height: auto;
+  padding: 5% 2%;
+  background: #000033;
+  margin-top: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.man-sec h2, .oil-sec h2, .rig-sec h2, .art-sec h2, .civil-sec h2, .pipe-sec h2, .designs-sec h2  {
+  color: #d3a024;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.man-img, .oil-img, .rig-img, .art-img, .civil-img, .pipe-img, .designs-img {
+  width: var(--col-12);
+  height: auto;
+  padding: 2%;
+}
+
+.man-img img, .oil-img img, .rig-img img, .art-img img, .civil-img img, .pipe-img img, .designs-img img {
+  width: var(--col-12);
+  height: var(--col-12);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.man-des, .oil-des, .rig-des, .art-des, .civil-des, .pipe-des, .designs-des {
+  width: var(--col-12);
+  height: auto;
+  padding: 2%;
+}
+
+.man-des p, .civil-des p, .oil-des p, .pipe-des p, .rig-des p, .designs-des p, .art-des p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 26px;
+}
+
+.civil-sec {
+  width: var(--col-12);
+  height: auto;
+  padding: 5% 7%;
+  margin-top: 50px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/civil.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.oil-sec {
+  width: var(--col-12);
+  height: auto;
+  padding: 5% 2%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/oil-gas.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* pipeline section */
+.pipe-sec {
+  width: 100%;
+  height: auto;
+  padding: 5% 7%;
+  margin-top: 50px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/pipe-fitting.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* rig moverment section */
+.rig-sec {
+  width: 100%;
+  height: auto;
+  padding: 5% 2%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/rig-movement.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* interior designs section */
+.designs-sec {
+  width: 100%;
+  height: auto;
+  padding: 5% 7;
+  margin-top: 50px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/interior-design.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* art and craft section */
+.art-sec {
+  width: 100%;
+  height: auto;
+  padding: 5% 2;
+  background: #d3a024;
+  margin-top: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.art-sec h2 {
+  color: #000033;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* contact section */
+.const-cta-sec {
+  width: 100%;
+  height: auto;
+  padding: 3% 7%;
+}
+
+.const-cta {
+  width: 100%;
+  height: auto;
+  padding: 3% 5%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/recruitment.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.const-cta h2 {
+  color: #d3a024;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}  
+
+.const {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  border: 1px solid #d3a024;
+  padding: 3% 5% 5%;
+  margin: 0px auto;
+}
+
+.const h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.const a {
+  color: #d3a024;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 1px solid #000033;
+  padding: 2% 4%;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.const a:hover {
+  color: #000033;
+  background: #d3a024;
+  border: none;
+  outline: 2px solid #d3a024;
+  outline-offset: 3px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+@media (min-width: 640px) {
+  .hero-text {
+    width: 500px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .civil-sec, .pipe-sec, .designs-sec {
+    padding: 3% 10%;
+  }
+
+  .oil-sec, .rig-sec, .art-sec {
+    padding: 3% 2%;
+  }
+
+
+  .man-sec h2, .oil-sec h2, .rig-sec h2, .art-sec h2, .civil-sec h2, .pipe-sec h2, .designs-sec h2 {
+    font-size: 2rem;
+    float: left;
+    width: var(--col-6);
+    text-align: left;
+    margin: 20px 0px 50px;
+    padding-left: 15px;
+  }
+  
+  .civil-sec h2, .pipe-sec h2, .designs-sec h2 {
+    float: right;
+    width: var(--col-6);
+    padding-left: 0px;
+  }
+
+  .man-img, .oil-img, .rig-img, .art-img, .civil-img, .pipe-img, .designs-img {
+    width: var(--col-6);
+    padding: 2% 0% 2% 2%;
+    float: right;
+  }
+
+  .civil-img, .pipe-img, .designs-img {
+    float: left;
+    padding: 2% 2% 2% 0%;
+  }
+
+  .man-sec::after, .oil-sec::after, .rig-sec::after, .art-sec::after, .civil-sec::after, .pipe-sec::after, .designs-sec::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .man-sec p, .oil-sec p, .rig-sec p, .art-sec p, .civil-sec p, .pipe-sec p, .designs-sec p {
+    font-size: 1.1rem;
+    text-align: left;
+    clear: left;
+  }
+
+  .civil-sec p, .pipe-sec p, .designs-sec p {
+    clear: right;
+  }
+
+  .const-cta-sec {
+    padding: 3% 7%;
+  }
+
+  .const-cta h2 {
+    font-size: 2rem;
+  }  
+
+  .const h3 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .const a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-text {
+    width: 700px;
+  }
+}

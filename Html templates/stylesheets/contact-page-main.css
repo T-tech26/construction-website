@@ -1,0 +1,280 @@
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+main {
+  width: var(--col-12);
+  height: auto;
+}
+
+.office-info {
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  padding: 5%;
+}
+
+.info {
+  width: var(--col-12);
+  height: auto;
+  background: #d3a024;
+  padding: 7% 0%;
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("/webimage/office.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.office-img {
+  width: var(--col-10);
+  margin: auto;
+  height: auto;
+}
+
+.office-img img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.info-detail {
+  width: var(--col-10);
+  height: auto;
+  margin: 5% auto;
+}
+
+.info-detail h1 {
+  color: #d3a024;
+  font-size: 1.4rem;
+  margin: 0px 0px 20px;
+}
+
+.info-detail ul li {
+  color: #fff;
+  font-size: 1.1rem;
+  list-style: none;
+  margin: 0px 0px 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.info-detail ul strong {
+  color: #d3a024;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.icons {
+  width: var(--col-12);
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 1% 4%;
+}
+
+.first-hr,.second-hr {
+  display: none;
+}
+
+.icons p {
+  color: #000033;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: -12px 5px 0px;
+}
+
+.icons span {
+  width: 35px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #d3a024;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  margin: -12px 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.icons span:hover{
+  background: #d3a024;
+  border: 1px solid #000033;
+}
+
+.icons span .fa-brands {
+  color: #000033;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* main content design for tablets */
+
+@media (min-width: 640px) {
+  .info {
+    padding: 7%;
+  }
+
+  .info-detail h1 {
+    font-size: 1.5rem;
+  }
+
+  .info-detail ul li {
+    font-size: 1.2rem;
+    margin: 0px 0px 20px;
+    line-height: 25px;
+  }
+
+  .info-detail ul strong {
+    font-size: 1.3rem;
+  }
+
+  .first-hr,.second-hr {
+    display: block;
+    width: var(--col-2);
+    height: 3px;
+    border: none;
+    background: #000033;
+  }
+
+  .icons span {
+    width: 38px;
+    height: 33px;
+  }
+
+  .icons span .fa-brands {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .info-detail h1 {
+    font-size: 1.5rem;
+  }
+
+  .info-detail ul li {
+    font-size: 1.2rem;
+  }
+
+  .info-detail ul strong {
+    font-size: 1.3rem;
+  }
+
+  .icons p {
+    font-size: 1.5rem;
+  }
+
+  .icons span {
+    width: 40px;
+    height: 35px;
+  }
+
+  .icons span .fa-brands {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info {
+    padding: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .office-img {
+    width: var(--col-6);
+    padding: 3%;
+  }
+
+  .info-detail {
+    width: var(--col-6);
+  }
+
+  .info-detail h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .info-detail ul li {
+    font-size: 1.3rem;
+    margin: 0px 0px 30px;
+    line-height: 35px;
+  }
+
+  .info-detail ul strong {
+    font-size: 1.5rem;
+  }
+
+  .icons {
+    padding: 1%;
+  }
+
+  .first-hr,.second-hr {
+    width: var(--col-3);
+  }
+
+  .icons p {
+    font-size: 1.8rem;
+    margin: -18px 5px;
+  }
+
+  .icons span {
+    width: 45px;
+    height: 40px;
+  }
+
+  .icons span .fa-brands {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-detail h1 {
+    font-size: 2rem;
+  }
+
+  .info-detail ul li {
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .icons p {
+    font-size: 2rem;
+  }
+
+  .icons span {
+    width: 40px;
+  }
+}

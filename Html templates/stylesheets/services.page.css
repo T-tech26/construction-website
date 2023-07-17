@@ -1,0 +1,253 @@
+/* services page design for smaller desktop */
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+.services-header {
+  width: var(--col-12);
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/services.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: 90%;
+  height: auto;
+  padding: 3% 5%;
+  border: 1px solid #d3a024;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main h2 {
+  width: var(--col-12);
+  height: auto;
+  color: #000033;
+  font-size: 1.5rem;
+  padding: 6% 5% 2%;
+  text-align: center;
+}
+
+.construction-section, .training-section, .recruitment-section, .design-section {
+  width: var(--col-12);
+  height: auto;
+  padding: 2% 7%;
+}
+
+/* construction section designs */
+
+.construction-details, .training-details, .recruitment-details, .design-details {
+  width: var(--col-12);
+  height: auto;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/construction.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.construction-img, .training-img, .recruitment-img, .design-img {
+  width: var(--col-12);
+  height: auto;
+  padding: 15%;
+}
+
+.construction-img img, .design-img img, .training-img img, .recruitment-img img {
+  width: var(--col-12);
+  height: var(--col-12);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.construction-des, .training-des, .recruitment-des, .design-des {
+  width: var(--col-12);
+  height: auto;
+  padding: 5% 5% 10% 5%;
+  background: #000033;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* specifing the h3 of both construction and recruitment section because they have same background color */
+.construction-des h3, .recruitment-des h3, .training-des h3, .design-des h3 {
+  height: auto;
+  padding: 2% 5%;
+  color: #d3a024;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* all section paragraphs designs are declared here to minimize the code */
+.construction-des p, .training-des p, .recruitment-des p, .design-des p {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+
+/* specifing both construction and recruitment anchor because they have same background */
+.construction-des a, .recruitment-des a, .design-des a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 2% 5%;
+  border: 1px solid #d3a024;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.construction-des a:hover, .recruitment-des a:hover, .design-des a:hover {
+  background: #d3a024;
+  border: none;
+  outline: 2px solid #d3a024;
+  outline-offset: 3px;
+  transition: 200ms;
+  color: #000033;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+/* training section designs */
+.training-details {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/training.jpg");
+}
+
+.training-des, .design-des {
+  background: #d3a024;
+}
+
+.training-des h3, .design-des h3 {
+  color: #000033;
+}
+
+.design-des a {
+  border: 1px solid #000033;
+}
+
+.design-des a:hover {
+  background: #000033;
+  outline: 2px solid #000033;
+  color: #d3a024;
+}
+
+/* recuitment section designs */
+.recruitment-details {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/jobs.jpg");
+}
+
+/* designs for the labour section */
+.design-details {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/interior-design.jpg");
+}
+
+@media (min-width: 640px) {
+  .hero-text {
+    width: 500px;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .construction-des h3, .recruitment-des h3, .training-des h3, .design-des h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .construction-details, .training-details, .recruitment-details, .design-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .training-details, .recruitment-details {
+    flex-direction: row-reverse;
+  }
+
+  .construction-img, .design-img, .training-img, .recruitment-img {
+    width: var(--col-6);
+    position: relative;
+  }
+
+  .construction-img img, .design-img img, .training-img img, .recruitment-img img {
+    width: var(--col-11);
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  .construction-des, .training-des, .recruitment-des, .design-des {
+    width: var(--col-6);
+  }
+
+  .construction-des p, .training-des p, .recruitment-des p, .design-des p {
+    text-align: left;
+  }
+
+  .construction-des a, .recruitment-des a, .design-des a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-text {
+    width: 700px;
+  }
+  
+  main h2 {
+    font-size: 1.8rem;
+  }
+}

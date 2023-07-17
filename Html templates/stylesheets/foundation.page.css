@@ -1,0 +1,214 @@
+/* foundation page designs for mobile devices */
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+.foundation-header {
+  width: var(--col-12);
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/foundation.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: 90%;
+  text-align: center;
+  border: 1px solid #d3a024;
+  padding: 3% 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+main h2 {
+  color: #000033;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 50px 0px 30px;
+}
+
+main section {
+  width: 100%;
+  height: auto;
+}
+
+/* poverty, youth and women section */
+.poverty-sec, .youth-sec, .women-sec {
+  width: 90%;
+  height: auto;
+  padding: 3% 10%;
+  margin: 0% auto;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/poverty.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.youth-sec {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/youth-dev.jpg");
+}
+
+.women-sec {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/webimage/women-empower.jpg");
+}
+
+.job-sec, .empower-sec {
+  width: var(--col-12);
+  height: auto;
+  padding: 4% 10% 7%;
+  background: #000033;
+  margin: 50px 0px 50px;
+}
+
+.empower-sec {
+  background: #d3a024;
+}
+
+.poverty-sec h3, .youth-sec h3, .women-sec h3, .job-sec h3, .empower-sec h3 {
+  color: #d3a024;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.empower-sec h3 {
+  color: #000033;
+}
+
+.poverty-img, .youth-img, .women-img, .job-img, .empower-img {
+  width: var(--col-12);
+  height: auto;
+  padding: 3% 0%;
+}
+
+.poverty-img img, .youth-img img, .women-img img, .job-img img, .empower-img img {
+  width: var(--col-12);
+  height: var(--col-12);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.poverty-des, .youth-des, .women-des, .job-des, .empower-des {
+  width: var(--col-12);
+  height: auto;
+  padding: 3% 0%;
+}
+
+.poverty-des h3, .youth-des h3, .women-des h3, .job-des h3, .empower-des h3 {
+  display: none;
+}
+
+.poverty-des p, .youth-des p, .women-des p, .job-des p, .empower-des p {
+  color: #fff;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 640px) {
+  .hero-text {
+    width: 550px;
+  }
+
+  main h2 {
+    font-size: 1.8rem;
+  }
+
+  .poverty-sec::after, .youth-sec::after, .women-sec::after, .job-sec::after, .empower-sec::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .poverty-sec h3, .youth-sec h3, .women-sec h3, .job-sec h3, .empower-sec h3 {
+    display: none;
+  }
+
+  .poverty-des h3, .youth-des h3, .women-des h3, .job-des h3, .empower-des h3 {
+    display: block;
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .empower-sec h3 {
+    color: #000033;
+  }
+
+  .poverty-img, .youth-img, .women-img, .job-img, .empower-img {
+    width: var(--col-6);
+    float: right;
+    padding-left: 4%;
+  }
+
+  .job-img, .empower-img {
+    padding-right: 4%;
+    padding-left: 0%;
+    float: left;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-text {
+    width: 650px;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poverty-sec h3, .youth-sec h3, .women-sec h3, .job-sec h3, .empower-sec h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .poverty-img, .youth-img, .women-img {
+    padding: 3% 5%;
+  }
+
+  .job-sec, .empower-sec {
+    padding: 4% 15% 7%;
+  }
+}

@@ -1,0 +1,466 @@
+/*specifing the grid view*/
+:root {
+  --col-1: 8.3%;
+  --col-2: calc(8.3% * 2);
+  --col-3: calc(8.3% * 3);
+  --col-4: calc(8.3% * 4);
+  --col-5: calc(8.3% * 5);
+  --col-6: calc(8.3% * 6);
+  --col-7: calc(8.3% * 7);
+  --col-8: calc(8.3% * 8);
+  --col-9: calc(8.3% * 9);
+  --col-10: calc(8.3% * 10);
+  --col-11: calc(8.3% * 11);
+  --col-12: 100%;
+}
+
+footer {
+  width: var(--col-12);
+  height: auto;
+  background: #000033;
+  padding: 10% 5% 0px;
+  margin-top: 50px;
+}
+
+.footer-first-layer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.company, .service, .training {
+  width: var(--col-12);
+  height: auto;
+  padding: 0% 10%;
+}
+
+.company h2,.service h2,.training h2,.contact h2 {
+  color: #d3a024;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.company ul li,.service ul li,.training ul li {
+  width: 100%;
+  list-style: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0px 0px 10px;
+}
+
+.company ul li a,.service ul li a,.training ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.company ul li a:hover,.service ul li a:hover,.training ul li a:hover {
+  color: #d3a024;
+}
+
+.contact {
+  width: var(--col-12);
+  height: auto;
+  padding: 0% 10% 0%;
+}
+
+.contact p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0px 0px 30px;
+}
+
+.contact input[type="email"] {
+  outline: none;
+  width: 100%;
+  height: 30px;
+  padding: 3px 5px;
+  margin: 0px 0px 10px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.contact textarea {
+  outline: none;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  padding: 10px;
+}
+
+.contact input[type="submit"] {
+  width: 70px;
+  height: 30px;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+  color: #d3a024;
+  background: transparent;
+  border: 1px solid #fff;
+  transition: 100ms;
+  -webkit-transition: 100ms;
+  -moz-transition: 100ms;
+  -ms-transition: 100ms;
+  -o-transition: 100ms;
+  cursor: pointer;
+}
+
+.footer-icon {
+  width: var(--col-4);
+  height: 50px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  float: right;
+  clear: right;
+}
+
+.footer-icon span {
+  width: 35px;
+  height: 30px;
+  background: #000033;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer-icon span:hover {
+  background: #d3a024;
+}
+
+.footer-icon span .fa-brands {
+  color: #fff;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.footer-hr {
+  border: none;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  margin: 30px 0px 0px;
+}
+
+.footer-second-layer {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.footer-second-layer h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-second-layer p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.footer-second-layer p a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-second-layer p a:hover {
+  color: #d3a024;
+}
+
+/* footer design for smaller desktop */
+
+@media (min-width: 640px) {
+  .footer-first-layer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .company, .service, .training {
+    width: var(--col-5);
+    height: auto;
+    padding: 0% 2%;
+  }
+  
+  .training {
+    height: 300px;
+    overflow-y: hidden;
+  }
+
+  .training:hover {
+    animation: showInfo 800ms ease-in 1 forwards;
+    -webkit-animation: showInfo 800ms ease-in 1 forwards;
+  }
+
+  @keyframes showInfo {
+    0% {
+      height: 300px;
+    }
+
+    50% {
+      height: 500px;
+    }
+
+    100% {
+      height: auto;
+    }
+  }
+
+  .company h2,.service h2,.training h2,.contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .company ul li,.service ul li,.training ul li {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    width: var(--col-6);
+    padding: 0% 2% 0%;
+  }
+
+  .contact p {
+    font-size: 1.1rem;
+  }
+
+  .contact input[type="submit"] {
+    font-size: 1rem;
+  }
+
+  .footer-icon {
+    width: var(--col-12);
+    margin-top: 10px;
+  }
+
+  .footer-icon span {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
+
+  .footer-second-layer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    line-height: normal;
+  }
+
+  .footer-second-layer h1 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 769px) {
+  .company, .service, .training {
+    padding: 0% 7%;
+  }
+
+  .training {
+    overflow-y: hidden;
+  }
+
+  .training:hover {
+    animation: showInfo 800ms ease-in 1 forwards;
+    -webkit-animation: showInfo 800ms ease-in 1 forwards;
+  }
+
+  @keyframes showInfo {
+    0% {
+      height: 300px;
+    }
+
+    50% {
+      height: 500px;
+    }
+
+    100% {
+      height: auto;
+    }
+  }
+
+  .company ul li,.service ul li,.training ul li {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    padding: 0% 7% 0% 7%;
+  }
+
+  .contact input[type="email"] {
+    height: 35px;
+  }
+
+  .contact textarea {
+    height: 100px;
+  }
+
+  .contact input[type="submit"] {
+    width: 80px;
+    height: 35px;
+    font-size: 1.1rem;
+    float: left;
+  }
+
+  .footer-icon {
+    width: var(--col-6);
+    margin-top: 5px;
+  }
+
+  .footer-icon span {
+    width: 50px;
+    height: 35px;
+  }
+
+  .footer-icon span .fa-brands {
+    font-size: 1.5rem;
+  }
+
+  .footer-second-layer p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .company, .service, .training {
+    width: var(--col-3);
+    height: auto;
+    padding: 0% 2%;
+  }
+
+  .training {
+    height: 300px;
+    overflow-y: hidden;
+  }
+
+  .training:hover {
+    animation: showInfo 800ms ease-in 1 forwards;
+    -webkit-animation: showInfo 800ms ease-in 1 forwards;
+  }
+
+  @keyframes showInfo {
+    0% {
+      height: 300px;
+    }
+
+    50% {
+      height: 500px;
+    }
+
+    100% {
+      height: auto;
+    }
+  }
+
+  .company h2,.service h2,.training h2,.contact h2 {
+    font-size: 1.3rem;
+  }
+
+  .company ul li,.service ul li,.training ul li {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    width: var(--col-4);
+    padding: 0% 2%;
+  }
+
+  .contact input[type="submit"] {
+    width: 100px;
+  }
+
+  .footer-icon {
+    width: var(--col-6);
+  }
+
+  .footer-icon span .fa-brands {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .company,.service,.training {
+    width: 24.9%;
+    height: auto;
+    padding: 0% 2%;
+  }
+
+  .training {
+    height: 300px;
+    overflow-y: hidden;
+  }
+
+  .training:hover {
+    animation: showInfo 800ms ease-in 1 forwards;
+    -webkit-animation: showInfo 800ms ease-in 1 forwards;
+  }
+
+  @keyframes showInfo {
+    0% {
+      height: 300px;
+    }
+
+    50% {
+      height: 500px;
+    }
+
+    100% {
+      height: auto;
+    }
+  }
+
+  .company h2,.service h2,.training h2,.contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .company ul li,.service ul li,.training ul li {
+    font-size: 1.2rem;
+  }
+
+  .footer-icon span .fa-brands {
+    font-size: 2rem;
+  }
+}
